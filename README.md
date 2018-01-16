@@ -18,7 +18,7 @@ Datasets and Source:
 7) Diseases
     https://data.chhs.ca.gov/dataset/infectious-disease-cases-by-county-year-and-sex
 8) Census Demographic Populations
-    https://seer.cancer.gov/stdpopulations/
+    https://seer.cancer.gov/popdata/download.html
 
 Preprocessing:
 1) Filter all data for California
