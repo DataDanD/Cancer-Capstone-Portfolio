@@ -21,12 +21,12 @@ Datasets and Source:
     https://seer.cancer.gov/stdpopulations/
 
 Preprocessing:
-Filter all data for California
-Limit years after 2001 to avoid missing values
-remove populations under a certain quantity
-group dataframes by year, county, age, race and sex
-merge data on same columns that were used to group
-create models
+1) Filter all data for California
+2) Limit years after 2001 to avoid missing values
+3) Remove populations under a certain quantity
+4) Group dataframes by year, county, age, race and sex
+5) Merge data on same columns that were used to group
+6) Create models
 
 Models:
 1) Linear Regression
