@@ -117,11 +117,11 @@ Recursive Feature Elimination (feature importance (Worked well for gradient boos
 
 
 
-Where to build Oncology Companies?
-
-Where Medicare rates are the highest
 
 ![Medicare Map](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/medicareCA.png)
+
+![Cancer by County](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/cancerCA.png)
+
 
 
 
