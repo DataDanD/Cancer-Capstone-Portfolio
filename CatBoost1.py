@@ -56,4 +56,4 @@ def mod(df):
 
 
 if __name__ == '__main__':
-    model = mod(pd.read_csv('/Users/d/Documents/Class/ZNA/Data/Cleaner/MVP/RadSupFraAirCan.csv'))
+    model = mod(pd.read_csv('df.csv'))
