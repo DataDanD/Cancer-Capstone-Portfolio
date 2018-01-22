@@ -2,7 +2,7 @@
 
 My Galvanize capstone project is to investigate environmental factors and cancer rates in California counties from 2000 to 2014 using supervised learning techniques.
 
-Datasets and Source:
+### Datasets and Source:
 1) SEER (Survailance Epidemiology and End Results program)
     - https://seer.cancer.gov/data/
 2) TRI (Toxic Release Inventory)
@@ -37,15 +37,16 @@ Datasets and Source:
     - https://catalog.data.gov/dataset/fips-county-code-look-up-tool
 
 
-## Preprocessing: (CleanGroup.py + Merge.py)
+### Preprocessing: (CleanGroup.py + Merge.py)
 1) Filter Government data for California
 2) Limit years after 2001 to avoid missing values
 3) Remove populations under a certain quantity
 4) Group dataframes by year and county (age, race and sex made data sparse)
 5) Merge data on same columns that were used to group
 
-## EDA (Jupyter Notebooks)
-Why do different counties have higher cancer rates
+### EDA (Jupyter Notebooks)
+Why do different counties have higher cancer rates?
+
 ![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanDis.png)
 
 Tableau Graph of cancer rates by county
@@ -78,15 +79,27 @@ Cancer Rate and Major Depression Correlation
 ![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanDep.png)
 
 
-## Models 
-Add linera Model here
+### Models (add scripts used here)
+Add linear Model here
 
 
 feature importance on default parameters
 ![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/RelevanceBoost.png)
-XGBoost feature importance
 
-Add feature importance here
+
+Add best model scores here 
+gridsearch parameters for XGBoost
+params={
+    'max_depth': [3], #[2,3,4,5,6,7,8,9]
+    'subsample': [0.8], #[0.4,0.5,0.6,0.7,.75,0.8,.85,0.9,1.0]
+    'colsample_bytree': [.85], #[0.5,0.6,0.7,.75,0.8,.85]
+    'n_estimators': [1600], #[1000,1400,1500,1600,1700,2000,3000]
+    'reg_alpha': [.05] #[0.01, 0.02, 0.03, 0.04]
+}
+RMSE = .0015
+MAE = .0263
+
+Add real feature importance here
 
 Where to build Oncology Companies?
 Where Medicare rates are the highest
