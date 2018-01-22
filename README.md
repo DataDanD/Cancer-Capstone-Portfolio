@@ -1,5 +1,7 @@
 # Boosting Cancer Rates
 
+## Motivation
+
 My Galvanize capstone project is to investigate environmental factors and cancer rates in California counties from 2000 to 2014 using supervised learning techniques.
 
 ### Datasets and Source:
