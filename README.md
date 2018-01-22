@@ -42,7 +42,7 @@ My Galvanize capstone project is to investigate environmental factors and cancer
 2) Limit years after 2001 to avoid missing values
 3) Remove populations under a certain quantity
 4) Group dataframes by year and county (age, race and sex made data sparse)
-5) Merge data on same columns that were used to group
+
 
 ### EDA (Jupyter Notebooks)
 Why do different counties have higher cancer rates?
@@ -90,14 +90,12 @@ Cancer Rate and Medicare Rates Correlation
 
 ![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanMed.png)
 
-Cancer Rate and Major Depression Correlation
-
-![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanDep.png)
 
 
 ### Models (add scripts used here)
 
 Add linear Model here
+
 
 
 feature importance on default parameters
@@ -112,9 +110,11 @@ MAE
 RMSE 
 
 
+
 Recursive Feature Elimination (feature importance (Worked well for gradient boosting))
 
 [(1, 'Alcohol'), (1, 'C Fips'), (1, 'Disabled Medicare'), (1, 'Drug Use'), (1, 'HIV'), (1, 'Hep B'), (1, 'Hep C'), (1, 'Major Depression'), (1, 'Medicare Population'), (1, 'PM2.5'), (1, 'Population'), (1, 'Uninsured'), (1, 'Year'), (2, 'Ozone'), (3, 'Work Disabled'), (4, 'Median Income'), (5, 'Health Status'), (6, 'Not Carcinogen'), (7, 'Education'), (8, 'Radon'), (9, 'Fracking'), (10, 'Carcinogen'), (11, 'Unemployed'), (12, 'Superfund'), (13, 'Unhealthy Days'), (14, 'Poverty')]
+
 
 
 Where to build Oncology Companies?
