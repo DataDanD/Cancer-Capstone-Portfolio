@@ -32,7 +32,7 @@ Datasets and Source:
 14) Community Health Status Indicators - Health Status
     https://catalog.data.gov/dataset/community-health-status-indicators-chsi-to-combat-obesity-heart-disease-and-cancer
 15) Insurance information
-    https://www.data.gov/
+    https://catalog.data.gov/dataset/community-health-status-indicators-chsi-to-combat-obesity-heart-disease-and-cancer
 16) State County FIPS Codes
     https://catalog.data.gov/dataset/fips-county-code-look-up-tool
 
