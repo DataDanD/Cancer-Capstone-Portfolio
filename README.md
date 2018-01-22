@@ -45,23 +45,30 @@ Datasets and Source:
 
 ## EDA (Jupyter Notebooks)
 Why do different counties have higher cancer rates
-graph of distribution
-![Cancer types in CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanCountType.png)
-box plot
-graph of california cancer rates
 
+![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanDis.png)
+![Cancer by County](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/cancerCA.png)
+![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanCounty.png)
+![Cancer CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanCoun2.png)
+![Fracking in CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/FrackEDA2.png)
+![Fracking and Cancer](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Frack.png)
+![SuperfundSites in CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/SuperfundEDA.png)
+![SuperfundSites and Cancer](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Super.png)
+![Heatmap of All Features](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heatmap.png)
+![Heatmap2](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heat2.png)
+![Heatmap2](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heat3.png)
 
-heatmap
-
-pariplot
+![Heatmap2](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/pair.png)
 As we can see in these graphs there are some correlations between some of the features and cancer rate
 
 Cancer Rate and Medicare Rate
+![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanMed.png)
 Cancer Rate and Major Depression
+![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanDep.png)
 
 ## Models 
 feature importance on default parameters
-
+![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/BoostingImportance.png)
 XGBoost feature importance
 A decision tree
 learning rate
