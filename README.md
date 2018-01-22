@@ -36,6 +36,7 @@ Datasets and Source:
 16) State County FIPS Codes
     - https://catalog.data.gov/dataset/fips-county-code-look-up-tool
 
+
 ## Preprocessing: (CleanGroup.py + Merge.py)
 1) Filter Government data for California
 2) Limit years after 2001 to avoid missing values
@@ -45,31 +46,46 @@ Datasets and Source:
 
 ## EDA (Jupyter Notebooks)
 Why do different counties have higher cancer rates
-
 ![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanDis.png)
+
+Tableau Graph of cancer rates by county
 ![Cancer by County](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/cancerCA.png)
+
+Some Counties have higher rates of cancer then others
 ![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanCounty.png)
 ![Cancer CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanCoun2.png)
+
+Do Fracking Wells correlate to Cancer rates?
 ![Fracking in CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/FrackEDA2.png)
 ![Fracking and Cancer](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Frack.png)
+
+Do Superfund Sites correlate to Cancer rates?
 ![SuperfundSites in CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/SuperfundEDA.png)
 ![SuperfundSites and Cancer](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Super.png)
+
+HeatMaps!
 ![Heatmap of All Features](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heatmap.png)
 ![Heatmap2](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heat2.png)
 ![Heatmap2](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heat3.png)
 
-![Heatmap2](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/pair.png)
+Some Correlations dug into
+![Pair Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/pair.png)
 As we can see in these graphs there are some correlations between some of the features and cancer rate
 
-Cancer Rate and Medicare Rate
+Cancer Rate and Medicare Rates Correlation
 ![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanMed.png)
-Cancer Rate and Major Depression
+Cancer Rate and Major Depression Correlation
 ![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanDep.png)
 
+
 ## Models 
-feature importance on default parameters
+Add linera Model
+
+
+feature importance on default parameters (drop Adaboost)
 ![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/BoostingImportance.png)
 XGBoost feature importance
+
 A decision tree
 learning rate
 risiduals
