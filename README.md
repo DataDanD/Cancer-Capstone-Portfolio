@@ -49,48 +49,67 @@ Why do different counties have higher cancer rates?
 
 ![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanDis.png)
 
+
 Tableau Graph of cancer rates by county
+
 ![Cancer by County](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/cancerCA.png)
 
+
 Some Counties have higher rates of cancer then others
+
 ![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanCounty.png)
 ![Cancer CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanCoun2.png)
 
+
 Do Fracking Wells correlate to Cancer rates?
+
 ![Fracking in CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/FrackEDA2.png)
 ![Fracking and Cancer](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Frack.png)
 
+
 Do Superfund Sites correlate to Cancer rates?
+
 ![SuperfundSites in CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/SuperfundEDA.png)
 ![SuperfundSites and Cancer](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Super.png)
 
+
 HeatMaps!
+
 ![Heatmap of All Features](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heatmap.png)
 ![Heatmap2](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heat2.png)
 ![Heatmap2](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heat3.png)
 
+
 Some Correlations dug into
 ![Pair Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/pair.png)
+
 As we can see in these graphs there are some correlations between some of the features and cancer rate
 
+
 Cancer Rate and Medicare Rates Correlation
+
 ![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanMed.png)
+
 Cancer Rate and Major Depression Correlation
+
 ![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanDep.png)
 
 
 ### Models (add scripts used here)
+
 Add linear Model here
 
 
 feature importance on default parameters
+
 ![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/RelevanceBoost.png)
 
 
-Add best model scores here? gridsearch parameters for XGBoost?
+Add best model scores here? gridsearch parameters Catboost?
 
-MAE 0.02522461
-RMSE 0.00124312
+MAE 
+
+RMSE 
 
 
 Recursive Feature Elimination (feature importance (Worked well for gradient boosting))
@@ -99,7 +118,9 @@ Recursive Feature Elimination (feature importance (Worked well for gradient boos
 
 
 Where to build Oncology Companies?
+
 Where Medicare rates are the highest
+
 ![Medicare Map](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/medicareCA.png)
 
 
