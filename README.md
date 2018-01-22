@@ -87,11 +87,13 @@ feature importance on default parameters
 ![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/RelevanceBoost.png)
 
 
-Add best model scores here 
-gridsearch parameters for XGBoost?
+Add best model scores here? gridsearch parameters for XGBoost?
+
+MAE 0.02522461
+RMSE 0.00124312
 
 
-Add feature importance here (Worked well for gradient boosting)
+Recursive Feature Elimination (feature importance (Worked well for gradient boosting))
 
 [(1, 'Alcohol'), (1, 'C Fips'), (1, 'Disabled Medicare'), (1, 'Drug Use'), (1, 'HIV'), (1, 'Hep B'), (1, 'Hep C'), (1, 'Major Depression'), (1, 'Medicare Population'), (1, 'PM2.5'), (1, 'Population'), (1, 'Uninsured'), (1, 'Year'), (2, 'Ozone'), (3, 'Work Disabled'), (4, 'Median Income'), (5, 'Health Status'), (6, 'Not Carcinogen'), (7, 'Education'), (8, 'Radon'), (9, 'Fracking'), (10, 'Carcinogen'), (11, 'Unemployed'), (12, 'Superfund'), (13, 'Unhealthy Days'), (14, 'Poverty')]
 
