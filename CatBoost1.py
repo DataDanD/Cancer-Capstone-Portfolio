@@ -6,7 +6,6 @@ from catboost import CatBoostRegressor, Pool
 from sklearn.cross_validation import train_test_split
 from sklearn.metrics import r2_score, mean_squared_error
 from sklearn.model_selection import GridSearchCV, cross_val_score, KFold
-from sklearn.linear_model import LinearRegression
 
 
 def mod(df):
@@ -27,7 +26,6 @@ def mod(df):
           learning_rate=.5,
           l2_leaf_reg=7,
           border_count=35)
-    # clf = LinearRegression(normalize=True)
     model = clf.fit(X_train, y_train)
     print(cross_val_score(clf, X_train, y_train, cv = kfold, scoring='r2'))
     # print(cross_val_score(clf, X_train, y_train, cv = kfold, scoring='r2').mean())
@@ -35,6 +33,7 @@ def mod(df):
     # print(mean_squared_error(y_test,model.predict(X_test)))
     # print(r2_score(y_test,model.predict(X_test)))
 
+    # Feature Importance Graph for CatBoost
     # one_hot = pd.get_dummies(X)
     # categorical_features_indices = np.where(one_hot.dtypes != np.float)[0]
     # one_hot = (one_hot - one_hot.mean()) / (one_hot.max() - one_hot.min())
