@@ -79,16 +79,18 @@ Cancer Rate and Major Depression Correlation
 
 
 ## Models 
-Add linera Model
+Add linera Model here
 
 
 feature importance on default parameters
-![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/BoostingImportance.png)
+![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/RelevanceBoost.png)
 XGBoost feature importance
+
+Add feature importance here
 
 Where to build Oncology Companies?
 Where Medicare rates are the highest
-![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/medicareCA.png)
+![Medicare Map](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/medicareCA.png)
 
 
 
