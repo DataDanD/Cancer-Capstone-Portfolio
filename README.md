@@ -88,18 +88,13 @@ feature importance on default parameters
 
 
 Add best model scores here 
-gridsearch parameters for XGBoost
-params={
-    'max_depth': [3], #[2,3,4,5,6,7,8,9]
-    'subsample': [0.8], #[0.4,0.5,0.6,0.7,.75,0.8,.85,0.9,1.0]
-    'colsample_bytree': [.85], #[0.5,0.6,0.7,.75,0.8,.85]
-    'n_estimators': [1600], #[1000,1400,1500,1600,1700,2000,3000]
-    'reg_alpha': [.05] #[0.01, 0.02, 0.03, 0.04]
-}
-RMSE = .0015
-MAE = .0263
+gridsearch parameters for XGBoost?
 
-Add real feature importance here
+
+Add feature importance here (Worked well for gradient boosting)
+
+[(1, 'Alcohol'), (1, 'C Fips'), (1, 'Disabled Medicare'), (1, 'Drug Use'), (1, 'HIV'), (1, 'Hep B'), (1, 'Hep C'), (1, 'Major Depression'), (1, 'Medicare Population'), (1, 'PM2.5'), (1, 'Population'), (1, 'Uninsured'), (1, 'Year'), (2, 'Ozone'), (3, 'Work Disabled'), (4, 'Median Income'), (5, 'Health Status'), (6, 'Not Carcinogen'), (7, 'Education'), (8, 'Radon'), (9, 'Fracking'), (10, 'Carcinogen'), (11, 'Unemployed'), (12, 'Superfund'), (13, 'Unhealthy Days'), (14, 'Poverty')]
+
 
 Where to build Oncology Companies?
 Where Medicare rates are the highest
