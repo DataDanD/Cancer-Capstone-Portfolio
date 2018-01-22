@@ -82,13 +82,13 @@ Cancer Rate and Major Depression Correlation
 Add linera Model
 
 
-feature importance on default parameters (drop Adaboost)
+feature importance on default parameters
 ![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/BoostingImportance.png)
 XGBoost feature importance
 
-A decision tree
-learning rate
-risiduals
+Where to build Oncology Companies?
+Where Medicare rates are the highest
+![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/medicareCA.png)
 
 
 
