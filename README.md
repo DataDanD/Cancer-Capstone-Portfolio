@@ -2,7 +2,8 @@
 
 ## Motivation
 
-My Galvanize capstone project is to investigate environmental factors and cancer rates in California counties from 2000 to 2014 using supervised learning techniques.
+My Galvanize capstone project is to investigate environmental factors and cancer rates in California counties from 2000 to 2014 using supervised learning techniques. Boosting techniques are popular in the data science community and are commonly used as a base model in most ensamble models that win Kaggle compititions. This project will use different boosting models with different parameters to reduce root mean square error in test predictions. 
+
 
 ### Preprocessing: (CleanGroup.py + Merge.py)
 1) Filter Government data for California
