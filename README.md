@@ -42,9 +42,9 @@ Cancer Rate and Medicare Rates Correlation
 
 ### Models (add scripts used here)
 
-Add linear Model here
+Gridsearched linear Model
 
-
+![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Lin.png)
 
 feature importance on default parameters
 
