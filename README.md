@@ -14,12 +14,12 @@ My Galvanize capstone project is to investigate environmental factors and cancer
 ### EDA (Jupyter Notebooks)
 Why do different counties have higher cancer rates?
 
-![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanDis.png)
+![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CancerIncidents.png)
 
 
 Some Counties have higher rates of cancer then others
 
-![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanCounty.png)
+![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CountyCancer.png)
 
 
 HeatMaps!
@@ -29,14 +29,14 @@ HeatMaps!
 
 Some Correlations dug into
 
-![Pair Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/pair.png)
+![Pair Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Pair4.png)
 
 
 As we can see in these graphs there are some correlations between some of the features and cancer rate
 
 Cancer Rate and Medicare Rates Correlation
 
-![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanMed.png)
+![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CanInMedPop.png)
 
 
 
@@ -48,7 +48,7 @@ Add linear Model here
 
 feature importance on default parameters
 
-![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/RelevanceBoost.png)
+![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Boostrel4.png)
 
 
 gridsearch parameters Gradient Boosting?
