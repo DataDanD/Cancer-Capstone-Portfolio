@@ -51,18 +51,27 @@ feature importance on default parameters
 ![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Boostrel4.png)
 
 
-gridsearch parameters Gradient Boosting?
+gridsearch parameters Gradient Boosting
+parameters = {
 
-MAE 
+     'max_depth':[3], #[2,3,4,5,6,7,8]
+     
+     'max_features':['auto'], #['sqrt','log2','auto']
+     
+     'min_samples_leaf':[4], #[1,2,3,4,5]
+     
+     'min_samples_split':[2], #[2,3,4,5]
+     
+     'n_estimators': [1600] #[600,900,1100,1200,1300,1400,1500,1600]
+}
 
-RMSE 
+
+![Fin Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Predict.png)
+
+
 
 
 
 Recursive Feature Elimination (feature importance (Worked well for gradient boosting))
 
-[(1, 'Alcohol'), (1, 'C Fips'), (1, 'Disabled Medicare'), (1, 'Drug Use'), (1, 'HIV'), (1, 'Hep B'), (1, 'Hep C'), (1, 'Major Depression'), (1, 'Medicare Population'), (1, 'PM2.5'), (1, 'Population'), (1, 'Uninsured'), (1, 'Year'), (2, 'Ozone'), (3, 'Work Disabled'), (4, 'Median Income'), (5, 'Health Status'), (6, 'Not Carcinogen'), (7, 'Education'), (8, 'Radon'), (9, 'Fracking'), (10, 'Carcinogen'), (11, 'Unemployed'), (12, 'Superfund'), (13, 'Unhealthy Days'), (14, 'Poverty')]
-
-
-
-
+[(1, 'Carcinogen'), (1, 'Disabled Medicare'), (1, 'Drug Use'), (1, 'HIV'), (1, 'Hep B'), (1, 'Hep C'), (1, 'Major Depression'), (1, 'Medicare Population'), (1, 'Ozone'), (1, 'PM2.5'), (1, 'Population'), (1, 'Uninsured'), (1, 'Work Disabled'), (2, 'Not Carcinogen'), (3, 'Year'), (4, 'C Fips'), (5, 'Radon'), (6, 'Unemployed'), (7, 'Education'), (8, 'Health Status'), (9, 'Alcohol'), (10, 'Median Income'), (11, 'Unhealthy Days'), (12, 'Poverty'), (13, 'Fracking'), (14, 'Superfund')]
