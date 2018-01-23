@@ -17,11 +17,6 @@ Why do different counties have higher cancer rates?
 ![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanDis.png)
 
 
-Tableau Graph of cancer rates by county
-
-![Cancer by County](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/cancerCA.png)
-
-
 Some Counties have higher rates of cancer then others
 
 ![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanCounty.png)
