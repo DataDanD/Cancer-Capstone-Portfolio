@@ -22,28 +22,17 @@ Some Counties have higher rates of cancer then others
 ![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/CanCounty.png)
 
 
-Do Fracking Wells correlate to Cancer rates?
-
-![Fracking in CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/FrackEDA2.png)
-![Fracking and Cancer](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Frack.png)
-
-
-Do Superfund Sites correlate to Cancer rates?
-
-![SuperfundSites in CA](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/SuperfundEDA.png)
-![SuperfundSites and Cancer](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Super.png)
-
-
 HeatMaps!
 
 ![Heatmap of All Features](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heatmap.png)
 
 
 Some Correlations dug into
+
 ![Pair Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/pair.png)
 
-As we can see in these graphs there are some correlations between some of the features and cancer rate
 
+As we can see in these graphs there are some correlations between some of the features and cancer rate
 
 Cancer Rate and Medicare Rates Correlation
 
