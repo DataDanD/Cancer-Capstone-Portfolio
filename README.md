@@ -1,7 +1,7 @@
-#Calculating Cancer Rates with Boosted Decision Trees
+# Calculating Cancer Rates with Boosted Decision Trees
 
 
-##Motivation
+## Motivation
 
 My Galvanize capstone project is to investigate environmental factors and cancer rates in California counties from 2001 to 2012 using supervised learning techniques, specifically looking into types of gradient boosting. [Boosting models] [6] are go to base layer along with neural nets for most ensemble models in Kaggle competitions by Grand Masters. This project will use different boosting models with different parameters to reduce root mean square error in test predictions.
 Our environment plays a very important role in our life and thus our health. According to the WHO, as much as [24%] [5] of all disease is caused by environmental exposures that could have been averted. [40%] [4] of people will receive a diagnosis of cancer in their lifetime (½ of all men and ⅓ of all women). Cancer rate is typically measured as incidents (new cases) per 100,000.  Yearly California counties have an average of 540 incidents per 100,000.
@@ -9,7 +9,7 @@ Our environment plays a very important role in our life and thus our health. Acc
 ![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CancerIncidents.png)
 
 
-##Questions
+##Q uestions
 
 -Can a supervised learning algorithm predict cancer rates at a county level?
 -What model technique will give the lowest root mean squared error (RMSE)?
@@ -19,7 +19,7 @@ Our environment plays a very important role in our life and thus our health. Acc
 ![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CountyCancer.png)
 
 
-##Data
+## Data
 
 ![Cancer Box Plot]()
 
@@ -28,7 +28,7 @@ For more info on each datasets used, including a link to each source, please cli
 Most datasets were collected from open source government data at data.gov. [1] Data is from surveys, reported by  companies, or collected from government agencies. The columns and rows in the table above are recorded after filtering for California and for years 2001-2012. Cancer data requires a signed form so I am not adding a folder for each file, but final.csv is on home page. Final date frame is 627 rows with 28 columns (y = Cancer Rate, drop Count)
 
 
-##Preprocessing
+## Preprocessing
 
 1) Find useful public datasets (any format: csv, text, fwf)
 2) Filter data for appropriate features
@@ -40,7 +40,7 @@ Most datasets were collected from open source government data at data.gov. [1] D
 8) Grid search parameters for lowest RMSE on select models
 
 
-##EDA 
+## EDA 
 
 [Air Quality](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Fracking](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Superfunds](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Radon](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [TRI](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 [Cancer Rates and Graphs](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
@@ -52,7 +52,7 @@ We can see some nice correlations
 ![Pair Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Pair4.png)
 
 
-### Models (add scripts used here)
+## Models (add scripts used here)
 
 I will start with a normal linear regression gridsearched, as baseline.
 
@@ -63,7 +63,7 @@ feature importance on boosting with default parameters
 ![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Boostrel4.png)
 
 
-##Results
+## Results
 
 I picked gradient boosting because catboost takes way longer to gridsearch.
 
@@ -86,7 +86,7 @@ parameters = {
 [Feature importance]
 
 
-##Discussion
+## Discussion
 
 This project was supposed to look at specific chemicals from the Toxic Release Inventory data from the EPA and specific cancers, but the data was sparse and not all toxins released into our environment have to be reported. Adding socioeconomic data made the model more accurate and reliable. The rows with the smaller counties could have been dropped, then it would have be possible to add more features: BMI, blood pressure, smoking. Fracking wells and superfund sites information would have performed better, if the cancer data was mapped to an area smaller than the county level. There may be some data leakage with major depression, as cancer can lead to depression. CatBoost / XGBoost / LightGB could have been good alternatives to gradient boosting, but they take longer to gridsearch for optimal parameters and implement.
 
@@ -94,12 +94,12 @@ This project was supposed to look at specific chemicals from the Toxic Release I
 [Major Depression rate and Cancer Rate]
 
 
-##Conclusion 
+## Conclusion 
 
 Boosting works with this regression problem. The final model has variance of +/- 5 RMSE. Medicare population and county FIPS are the features that matter the most in predicting cancer incidence rates for these models. More data is needed to determine relationships between diseases and the environment. 
 
 
-###Future Steps
+### Future Steps
 
 EDA in Jupyter Notebooks explained
 Partial Dependency Plots EDA (script written)
@@ -107,7 +107,7 @@ Bayesian Probabilistic Linear Model (pymc3)
 Clean graph folder
 
 
-##References
+## References
 [1] https://www.data.gov/
 [2] https://seer.cancer.gov/data/
 [3] https://www.epa.gov/
