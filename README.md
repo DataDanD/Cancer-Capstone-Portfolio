@@ -25,7 +25,7 @@ Our environment plays a very important role in our life and thus our health. Acc
 
 ## Data
 
-![Cancer Box Plot]()
+![Data Table](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/DataTable.png)
 
 For more info on each datasets used, including a link to each source, please click [here](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Data.md).
 
@@ -64,7 +64,7 @@ I will start with a normal linear regression gridsearched, as baseline.
 
 feature importance on boosting with default parameters
 
-![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Boostrel4.png)
+![Boosting Models](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterImportance.png)
 
 
 ## Results
@@ -85,9 +85,9 @@ parameters = {
      'n_estimators': [1600] #[600,900,1100,1200,1300,1400,1500,1600]
 }
 
-[distribution predictions (Boosting linear)]
+[distribution predictions (Boosting)](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterPredicting.png)
 
-[Feature importance]
+[Feature importance](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterImportance.png)
 
 
 ## Discussion
@@ -106,8 +106,11 @@ Boosting works with this regression problem. The final model has variance of +/-
 ### Future Steps
 
 EDA in Jupyter Notebooks explained
+
 Partial Dependency Plots EDA (script written)
+
 Bayesian Probabilistic Linear Model (pymc3)
+
 Clean graph folder
 
 
