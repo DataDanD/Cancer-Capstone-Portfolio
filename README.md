@@ -85,9 +85,9 @@ parameters = {
      'n_estimators': [1600] #[600,900,1100,1200,1300,1400,1500,1600]
 }
 
-[distribution predictions (Boosting)](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterPredicting.png)
+![distribution predictions (Boosting)](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterPredicting.png)
 
-[Feature importance](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterImportance.png)
+![Feature importance](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterImportance.png)
 
 
 ## Discussion
@@ -95,7 +95,8 @@ parameters = {
 This project was supposed to look at specific chemicals from the Toxic Release Inventory data from the EPA and specific cancers, but the data was sparse and not all toxins released into our environment have to be reported. Adding socioeconomic data made the model more accurate and reliable. The rows with the smaller counties could have been dropped, then it would have be possible to add more features: BMI, blood pressure, smoking. Fracking wells and superfund sites information would have performed better, if the cancer data was mapped to an area smaller than the county level. There may be some data leakage with major depression, as cancer can lead to depression. CatBoost / XGBoost / LightGB could have been good alternatives to gradient boosting, but they take longer to gridsearch for optimal parameters and implement.
 
 ![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CanInMedPop.png)
-[Major Depression rate and Cancer Rate]
+
+![Major Depression rate and Cancer Rate]
 
 
 ## Conclusion 
@@ -104,7 +105,6 @@ Boosting works with this regression problem. The final model has variance of +/-
 
 
 ### Future Steps
-
 EDA in Jupyter Notebooks explained
 
 Partial Dependency Plots EDA (script written)
