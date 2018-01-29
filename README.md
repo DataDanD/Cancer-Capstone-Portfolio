@@ -49,7 +49,7 @@ Most datasets were collected from open source government data at data.gov. [1] D
 [Air Quality](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Fracking](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Superfunds](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Radon](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [TRI](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 [Cancer Rates and Graphs](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
-We can see some nice correlations
+We can see some nice correlations as we look at a heatmap and we can look at some of these variables closer with a pairplot.
 
 ![Heatmap of All Features](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heatmap.png)
 
@@ -60,11 +60,13 @@ We can see some nice correlations
 
 I will start with a normal linear regression gridsearched, as baseline.
 
-![Boosting Models](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Lin.png)
+![Lin Predicting](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Lin.png)
 
-feature importance on boosting with default parameters
+Not bad, but lets see how well boosting can perform on these predictions. I will try Random forest, gradient boosting, addaboost, and catboost with default parameters and I am curious to see feature importance. Feature importance in these tree models refers to where splits of the tree happen. Splits are decided based on how well the model can best gain information.
 
-![Boosting Models](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterImportance.png)
+feature relevance on boosting with default parameters
+
+![Boosting Models Rel](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterBoosting.png)
 
 
 ## Results
@@ -95,8 +97,6 @@ parameters = {
 This project was supposed to look at specific chemicals from the Toxic Release Inventory data from the EPA and specific cancers, but the data was sparse and not all toxins released into our environment have to be reported. Adding socioeconomic data made the model more accurate and reliable. The rows with the smaller counties could have been dropped, then it would have be possible to add more features: BMI, blood pressure, smoking. Fracking wells and superfund sites information would have performed better, if the cancer data was mapped to an area smaller than the county level. There may be some data leakage with major depression, as cancer can lead to depression. CatBoost / XGBoost / LightGB could have been good alternatives to gradient boosting, but they take longer to gridsearch for optimal parameters and implement.
 
 ![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CanInMedPop.png)
-
-![Major Depression rate and Cancer Rate]
 
 
 ## Conclusion 
