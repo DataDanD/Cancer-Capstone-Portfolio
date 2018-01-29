@@ -1,9 +1,9 @@
 # Calculating Cancer Rates with Boosted Decision Trees
 
-
 ## Motivation
 
 My Galvanize capstone project is to investigate environmental factors and cancer rates in California counties from 2001 to 2012 using supervised learning techniques, specifically looking into types of gradient boosting. Boosting models are go to base layer along with neural nets for most ensemble models in Kaggle competitions by Grand Masters. [6] This project will use different boosting models with different parameters to reduce root mean square error in test predictions.
+
 Our environment plays a very important role in our life and thus our health. According to the WHO, as much as 24% of all disease is caused by environmental exposures that could have been averted. [5] 40% of people will receive a diagnosis of cancer in their lifetime (½ of all men and ⅓ of all women). [4] Cancer rate is typically measured as incidents (new cases) per 100,000.  Yearly California counties have an average of 540 incidents per 100,000.
 
 ![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CancerIncidents.png)
@@ -17,8 +17,7 @@ Our environment plays a very important role in our life and thus our health. Acc
 
 -What environmental factors will be important for predicting accuracy?
 
--Why do cancer rates differ widely in California countries?
-
+-Why do cancer rates differ widely in California counties? The graph below demonstrates the variety of cancer incidents per 100,000.
 
 ![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CountyCancer.png)
 
@@ -58,7 +57,7 @@ We can see some nice correlations as we look at a heatmap and we can look at som
 
 ## Models
 
-I will start with a normal linear regression gridsearched, as baseline.
+I will start with a normal linear regression gridsearched, as baseline. The gridsearch includes setting fit_intercept=True, normalize=False, copy_X=True
 
 ![Lin Predicting](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Lin.png)
 
