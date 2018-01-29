@@ -3,18 +3,22 @@
 
 ## Motivation
 
-My Galvanize capstone project is to investigate environmental factors and cancer rates in California counties from 2001 to 2012 using supervised learning techniques, specifically looking into types of gradient boosting. [Boosting models] [6] are go to base layer along with neural nets for most ensemble models in Kaggle competitions by Grand Masters. This project will use different boosting models with different parameters to reduce root mean square error in test predictions.
-Our environment plays a very important role in our life and thus our health. According to the WHO, as much as [24%] [5] of all disease is caused by environmental exposures that could have been averted. [40%] [4] of people will receive a diagnosis of cancer in their lifetime (½ of all men and ⅓ of all women). Cancer rate is typically measured as incidents (new cases) per 100,000.  Yearly California counties have an average of 540 incidents per 100,000.
+My Galvanize capstone project is to investigate environmental factors and cancer rates in California counties from 2001 to 2012 using supervised learning techniques, specifically looking into types of gradient boosting. Boosting models are go to base layer along with neural nets for most ensemble models in Kaggle competitions by Grand Masters. [6] This project will use different boosting models with different parameters to reduce root mean square error in test predictions.
+Our environment plays a very important role in our life and thus our health. According to the WHO, as much as 24% of all disease is caused by environmental exposures that could have been averted. [5] 40% of people will receive a diagnosis of cancer in their lifetime (½ of all men and ⅓ of all women). [4] Cancer rate is typically measured as incidents (new cases) per 100,000.  Yearly California counties have an average of 540 incidents per 100,000.
 
 ![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CancerIncidents.png)
 
 
-##Q uestions
+## Questions
 
 -Can a supervised learning algorithm predict cancer rates at a county level?
+
 -What model technique will give the lowest root mean squared error (RMSE)?
+
 -What environmental factors will be important for predicting accuracy?
+
 -Why do cancer rates differ widely in California countries?
+
 
 ![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CountyCancer.png)
 
@@ -52,7 +56,7 @@ We can see some nice correlations
 ![Pair Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Pair4.png)
 
 
-## Models (add scripts used here)
+## Models
 
 I will start with a normal linear regression gridsearched, as baseline.
 
@@ -109,9 +113,14 @@ Clean graph folder
 
 ## References
 [1] https://www.data.gov/
+
 [2] https://seer.cancer.gov/data/
+
 [3] https://www.epa.gov/
+
 [4] https://www.cancer.org/cancer/cancer-causes.html
+
 [5] http://www.who.int/mediacentre/news/releases/2006/pr32/en/ 
+
 [6]http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/ 
 
