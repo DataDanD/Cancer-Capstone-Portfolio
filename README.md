@@ -17,18 +17,20 @@ Our environment plays a very important role in our life and thus our health. Acc
 
 -What environmental factors will be important for predicting accuracy?
 
--Why do cancer rates differ widely in California counties? The graph below demonstrates the variety of cancer incidents per 100,000.
+-Why do cancer rates differ widely in California counties? 
+
+The graph below demonstrates the variety of cancer incidents per 100,000.
 
 ![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CountyCancer.png)
 
 
 ## Data
 
+Most datasets were collected from open source government data at data.gov. [1] Data is from surveys, reported by  companies, or collected from government agencies. The columns and rows in the table below are recorded after filtering for California and for years 2001-2012. Cancer data requires a signed form so I am not adding a folder for each file, but final.csv is on home page. Final date frame is 627 rows with 28 columns (y = Cancer Rate, drop Count)
+
 ![Data Table](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/DataTable.png)
 
 For more info on each datasets used, including a link to each source, please click [here](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Data.md).
-
-Most datasets were collected from open source government data at data.gov. [1] Data is from surveys, reported by  companies, or collected from government agencies. The columns and rows in the table above are recorded after filtering for California and for years 2001-2012. Cancer data requires a signed form so I am not adding a folder for each file, but final.csv is on home page. Final date frame is 627 rows with 28 columns (y = Cancer Rate, drop Count)
 
 
 ## Preprocessing
@@ -43,7 +45,9 @@ Most datasets were collected from open source government data at data.gov. [1] D
 8) Grid search parameters for lowest RMSE on select models
 
 
-## EDA 
+## EDA
+
+Currently updating the EDA scripts
 
 [Air Quality](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Fracking](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Superfunds](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Radon](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [TRI](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 [Cancer Rates and Graphs](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
