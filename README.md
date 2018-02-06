@@ -2,11 +2,14 @@
 
 ## Motivation
 
-My Galvanize capstone project is to investigate environmental factors and cancer rates in California counties from 2001 to 2012 using supervised learning techniques, specifically looking into types of gradient boosting. Boosting models are go to base layer along with neural nets for most ensemble models in Kaggle competitions by Grand Masters. [6] This project will use different boosting models with different parameters to reduce root mean square error in test predictions.
+My Galvanize capstone project is to investigate environmental factors and cancer rates in California counties from 2001 to 2012 using supervised learning techniques, specifically looking into types of gradient boosting. Boosting models are a go to base layer along with neural nets for most ensemble models in Kaggle competitions by Grand Masters. [6] This project will use different boosting models with different parameters to reduce root mean square error in test predictions. 2017 saw a new  boosting model hailing from Russian company Yandex called Catboost (Cat stands for Categorical); this model is supposed to compete well and even surpass XGBoost, the current all star.
 
-Our environment plays a very important role in our life and thus our health. According to the WHO, as much as 24% of all disease is caused by environmental exposures that could have been averted. [5] 40% of people will receive a diagnosis of cancer in their lifetime (½ of all men and ⅓ of all women). [4] Cancer rate is typically measured as incidents (new cases) per 100,000.  Yearly California counties have an average of 540 incidents per 100,000.
+Our environment plays a very important role in our life and thus our health. According to the WHO, as much as 24% of all disease is caused by environmental exposures that could have been averted. [5] New research keeps getting published about cancer and environmental pollution and some of this data is now being collected by government departments, especially in California. The Survaliance, Epidemiology, and End Results program (SEER) has about 10 million cases of cancer in their database ranging over 11 states, some starting in the 1970s. The last California counties to join this program (mandated by the state) happened in 2001 and since that year they have logged 2.5 million cancer incidents. This might seem like a lot for a state close to 40 million people, but the American Cancer Society states that 40% of American people will receive a diagnosis of cancer in their lifetime (½ of all men and ⅓ of all women). [4] Cancer rate is typically measured as incidents (new cases) per 100,000 and so will this project. This measure should not be confused with prevalence, total current cases. 
+
+The first goal was to find the average yearly California incident rate per county. The histogram below is a plot of the different incidents and the average is 542 cases per 100,000, ranging from 200 to 1,000.
 
 ![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CancerIncidents.png)
+
 
 
 ## Questions
@@ -15,48 +18,71 @@ Our environment plays a very important role in our life and thus our health. Acc
 
 -What model technique will give the lowest root mean squared error (RMSE)?
 
--What environmental factors will be important for predicting accuracy?
+-What environmental factors will be important for prediction accuracy?
 
--Why do cancer rates differ widely in California counties? 
+-Why do cancer rates differ in California counties? 
 
-The graph below demonstrates the variety of cancer incidents per 100,000.
+This next graph demonstrates the variety of cancer incidents. (County Fips code is used by the govenment to identify counties and give them a unique ID, the code is 5 digits long when you add the state and county code together)
 
 ![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CountyCancer.png)
 
 
+
 ## Data
 
-Most datasets were collected from open source government data at data.gov. [1] Data is from surveys, reported by  companies, or collected from government agencies. The columns and rows in the table below are recorded after filtering for California and for years 2001-2012. Cancer data requires a signed form so I am not adding a folder for each file, but final.csv is on home page. Final date frame is 627 rows with 28 columns (y = Cancer Rate, drop Count)
+Most datasets were collected from open source government data at data.gov. [1] The government data is from surveys, reported by companies, or collected from different agencies. The columns and rows in the table below are recorded after filtering for California and for years 2001-2012. 
 
 ![Data Table](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/DataTable.png)
 
-For more info on each datasets used, including a link to each source, please click [here](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Data.md).
+Accessing the SEER cancer data requires a signed wavier, therefore I am not allowed to share the file. However, Cancer.csv is the final file and is on the home page. It has the cancer incident vales the models later on are trying to predict as well as all the features used to make these predictions. Final data frame is 627 rows with 28 columns (the y value being predicted is 'Cancer Rate' and drop 'Count' to prevent data leakage). There are 58 counties in California and 11 years of data, there should be 638 rows, but one county was missing Radon data and was dropped from this expirement.
+
+Unfortunitly some of the main data used stopped in 2012, while other data is updated regularly. The data is grouped by county because, the SEER data (the Y value the models are predicting) is at the county level. The Fracking Wells and Superfund Sites data that researchers scrapped from the web and uploaded to Kaggle has GPS coordinates, but it is impossible to tell which SEER patients in those counties lived closer to these locations.
+
+For more information on each datasets used, including a link to each source, check out [Data.md](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Data.md) on the home page.
 
 
-## Preprocessing
 
-1) Find useful public datasets (any format: csv, text, fwf)
-2) Filter data for appropriate features
-3) Group by year and county
-4) Pivot columns as needed
-5) Merge 14 data frames to cancer data
-6) Feature engineering + more filtering
-7) Sk-Learn regression models & other boosting
-8) Grid search parameters for lowest RMSE on select models
+## Pipeline
+
+### Preprocessing 
+
+1) Find useful environmental / socioeconomic public datasets (any format: csv, text, fwf)
+2) Turn files into Pandas (a Python package) style data frames
+3) Exploritory Data Analysis (EDA) to see if file is usable and features to keep
+4) Filter data for appropriate state and years
+5) Convert files to CSV as back ups / check point
+6) Drop features that will not be used for project
+7) Group all data by county and by year when possible
+8) Pivot columns as needed (turning a column with multiple features into seperate columns)
+9) Merge final (14) data frames to SEER data to create Cancer.csv (merge on County Fips)
+10) Feature engineering and more filtering to prevent multicolinearity and data leakage
+
+### Modeling
+
+1) Get base measure with linear regression model
+2) Sk-Learn regression models & other boosting packages
+3) Grid search parameters for lowest RMSE on select models
+
 
 
 ## EDA
 
-Currently updating the EDA scripts
+(Currently updating the EDA and jupyter notebooks)
 
 [Air Quality](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Fracking](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Superfunds](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Radon](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [TRI](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 [Cancer Rates and Graphs](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
-We can see some nice correlations as we look at a heatmap and we can look at some of these variables closer with a pairplot.
+We can see some nice correlations between cancer incidents and features as we look at a heatmap and we can look at some of these variables closer with a pairplot. We can also see some of the features correlate, this is call multicolinearity and is not a good thing for machine learning algorithms. Lighter and darker boxes on the heatmap are not a good thing, except for the diagalon going across the middle where features intersect with eachother. Explain why its bad. 
 
 ![Heatmap of All Features](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heatmap.png)
 
+Explain some similarity.
+Pair plot explaination
+high and low rates explained
+
 ![Pair Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Pair4.png)
+
+Major depression and cancer incidents
 
 
 ## Models
