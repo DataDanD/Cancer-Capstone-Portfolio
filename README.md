@@ -11,7 +11,7 @@ The first goal was to find the average yearly California incident rate per count
 
 ![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CancerIncidents.png)
 
-(Make graph bigger / better looking, delete 'cancer rate' from X, maybe add y label)
+(Make graph bigger / better looking. delete 'cancer rate'. y label? Juypter?)
 
 
 
@@ -30,6 +30,8 @@ The first goal was to find the average yearly California incident rate per count
 This following is a box plot demonstrating the variety of county cancer incidents within California.
 
 ![Cancer Box Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CountyCancer.png)
+
+(Juypter)
 
 County Fips code is used in this project to keep county names simple. FIPS (Federal Information Processing Standard) Code is used by the government and is 5 digits when you concatenate the 2 digit code for the state ID and 3 digit code for the county. This numbering systems helps identify counties with the same name that are in different states by using a unique ID system. The term County Fips (and in some files C Fips) will be used in this project, as we are only looking at one state and the California code of 06 was delete from all data for the merging process. Link to [California Fips dictionary](https://www.weather.gov/hnx/cafips), if interested in certain location.
 
@@ -129,25 +131,27 @@ Not bad, but lets see how well boosting can perform with predicting these cancer
 
 
 ### Overview of Models
+
 (New Section)
 
-#### Random Forest
+#### Random Forest:
 
-#### Gradient Boosting 
+#### Gradient Boosting:
 
-#### Addaboost (Addaptive Boosting)
+#### Addaboost (Addaptive Boosting):
 
-#### CatBoost (Categorical Boosting)
+#### CatBoost (Categorical Boosting):
 
-#### XGBoost (Extreme Gradient Boosting)
+#### XGBoost (Extreme Gradient Boosting):
 
 
 ### Feature Importance 
 
 (Complete Section)
+
 Feature importance in these tree models refers to where splits of the tree happen. Splits are decided based on how well the model can best gain information. (reduce loss function and RMSE)
 
-The horizontal histograms below useses default parameters to calculate feature relevance and RMSE and mean absolute error (AE)
+The horizontal histograms below useses default parameters to calculate feature relevance and RMSE and mean absolute error (MAE)
 
 
 ![Boosting Models Rel](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterBoosting.png)
@@ -163,7 +167,7 @@ The horizontal histograms below useses default parameters to calculate feature r
 I picked gradient boosting because catboost takes way longer to gridsearch. (no, and talk AWS(EC2, S3)
 
 gridsearch parameters Gradient Boosting
-{parameters = {
+parameters = {
 
      'max_depth':[3], #[2,3,4,5,6,7,8]
      
@@ -174,7 +178,7 @@ gridsearch parameters Gradient Boosting
      'min_samples_split':[2], #[2,3,4,5]
      
      'n_estimators': [1600] #[600,900,1100,1200,1300,1400,1500,1600]
-}}
+}
 
 ![distribution predictions (Boosting)](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterPredicting.png)
 
