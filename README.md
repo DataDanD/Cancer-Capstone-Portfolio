@@ -1,5 +1,7 @@
 # Calculating Cancer Rates with Boosted Decision Trees
 
+###### AKA, 'Boosting Cancer Rates' (teachers didn't approve)
+
 
 ## Motivation
 
@@ -13,17 +15,15 @@ The first goal was to find the average yearly California incident rate per count
 
 
 
-
-
 ## Questions
 
--Can a supervised learning algorithm predict cancer rates at a county level?
+- Can a supervised learning algorithm predict cancer rates at a county level?
 
--What model technique will give the lowest root mean squared error (RMSE)?
+- What model technique will give the lowest root mean squared error (RMSE)?
 
--What environmental factors will be important for prediction accuracy?
+- What environmental factors will be important for prediction accuracy?
 
--Why do cancer rates differ in California counties? 
+- Why do cancer rates differ in California counties? 
 
 This following is a box plot demonstrating the variety of county cancer incidents within California.
 
@@ -31,8 +31,6 @@ This following is a box plot demonstrating the variety of county cancer incident
 
 
 County Fips code is used in this project to keep county names simple. FIPS (Federal Information Processing Standard) Code is used by the government and is 5 digits when you concatenate the 2 digit code for the state ID and 3 digit code for the county. This numbering systems helps identify counties with the same name that are in different states by using a unique ID system. The term County Fips (and in some files C Fips) will be used in this project, as we are only looking at one state and the California code of 06 was delete from all data for the merging process. Link to [California Fips dictionary](https://www.weather.gov/hnx/cafips), if interested in certain location.
-
-
 
 
 
@@ -46,7 +44,14 @@ Most data sources were thanks to government agencies and their open source files
 
 Accessing the SEER cancer data requires a [signed wavier](https://seer.cancer.gov/data/access.html), therefore I am not allowed to share the file. However, Cancer.csv is the final file and can be downloaded from the home page on this repository. It has the cancer incident vales the models are trying to predict as well as all the final features used to make these predictions. Final data frame is 627 rows with 28 columns, 27 features for the X value in scripts and the y value that is predicted is labeled 'Cancer Rate'. There are 58 counties in California and 11 years of data, there should be 638 rows, but one county was missing Radon data and was dropped from this experiment.
 
-For more information on each datasets used, including a link to each source, check out [Data.md](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Data.md) on the home page.
+For more information and a link to each file used in Cancer.csv, check out [Data.md](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Data.md) on the home page.
+
+
+### Discared Data Section
+
+(In progress)
+
+
 
 
 
@@ -79,34 +84,189 @@ For more information on each datasets used, including a link to each source, che
 
 
 
+## EDA (Exploitory Data Analysis)
+
+### Meet Some of the Lucky Features
+
+###### UNDER CONSTRUCTION
+
+These next links will take you to on a trip to Jupyter Notebooks where we can explore files before the merge.
+
+(Links have eda and basic graphs, adding description for each kernel later)
+
+#### TRI
+
+[Toxic Inventory Release (TRI)](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
+
+#### EPA Air Quality
+
+[Air Quality](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) 
+
+#### Radon
+
+[Radon Averages](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
+
+#### Fracking Wells
+
+[Fracking Wells](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
+
+#### Supefund Sites
+
+[Superfund Sites](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
+
+#### SEER Cancer & Census
+
+[SEER + Census](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
 
-## EDA
-
-(Links have eda and basic graphs, going to update)
-
-[Air Quality](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Fracking](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Superfunds](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Radon](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [TRI](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
-[Cancer Rates and Graphs](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
-
-We can also see some of the features correlate, this is call multicolinearity and is not a good thing for machine learning algorithms. Lighter and darker boxes on the heatmap are not a good thing, except for the diagalon going across the middle where features intersect with eachother. 
-
-(Explain why multicolinearity is bad)
 
 
-(Explain heatmap)
+
+
+
+
+### EDA in Final project 
+
+Now we will explore all the features that have successfully passed the merge to the final dataframe.
+
+First up is an image of a heatplot (also called "plasma soup" by an extremely select few) this will show us column relationships, in the form of correlations, in all of the data. Lighter and darker (positive and negative correlations, respectively) boxes on the graph are usually not a good thing. Exceptions currently include: diagonal in the middle where features intersect with themselves (100% correlation!) and the rows/columns with 'Count' and 'Cancer Rate'. They should honestly be removed from this graph as they are not features used in prediction. (Will fix in future, maybe; I mean it is cool to see what they relate to as well) 'Count' was used to make 'Cancer Rate' by dividing the cancer count by population in same county and year, then multiplied by 100,000.
+
+We only have to look at half of the plasma soup graph to understand all the correlations, as features will intersect with all other features twice. Pick one side of the diagonal to aviod looking at the same thing twice.
 
 ![Heatmap of All Features](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heatmap.png)
 
+Interesting... Looks like I have more work to do. This might take awhile.
 
-We can see some nice correlations between cancer incidents and features as we look at a heatmap and we can look at some of these variables closer with a pairplot. 
+What correlates?
 
-(Explain some similarites in heatmap)
 
-(Pair plot explaination)(high and low rates)(Why these variables)
+
+#### Under Construction
+
+Positve: 
+A county with high value in feature_1 likly has high value in feature_2, or low and low values, when feature_1 and feature_2 have positive correlation. This is represented as light color in graph above.
+
+Negative: 
+Reverse of positive,
+as feature_1 increases, feature_2 decreases, when negative correltation exist between the two features.
+(lower and higher, higher and lower)
+
+
+
+Top left - positive correlation box:
+
+Ozone, 
+PM2.5, 
+Population, and
+Count
+
+Okay, Ozone and PM2.5 is obvious as well as incident count and population.
+
+Makes some sense that places that have more people have worse air pollution
+
+Stay away from people
+
+Ozone, more correlation to cancer rate
+
+PM2.5, more correlation with count and pop
+
+
+
+
+Middle of graph - lots of positive and negative relations:
+
+Education,
+Median Income,
+Poverty,
+Unemployment,
+Uninsured,
+Alcohal (spelled wrong),
+Health Status,
+Unhealthy Days
+
+Yup, these all measure socioeconimic status of the popultion 
+
+Education and Income: Positive
+
+Education, Poverty, Unemploted: Negative
+
+Keep?
+Drop?
+
+
+
+Bottom Right - positive correlations: 
+
+Elder Medicare, 
+Disabled Medicare, 
+Work Disabled, 
+Drug Use, 
+Major Depression
+
+What drugs are the elders on?
+
+Work or Medicare disabled?
+
+
+
+
+Other:
+
+Median Income & Disabled Medicare:
+Negative,
+High income less disabled
+
+Drug Use and Year??:
+Negative,
+Year goes up use goes down.
+Is drug use going down in California?
+
+Major Depression and Cancer Rate -  Huh? 
+Positive,
+What comes first?
+
+
+
+
+The features that correlate to other features is call multicolinearity 
+
+not a good thing for machine learning algorithms. 
+
+Why are correlated features bad? 
+
+Explain why multicolinearity or link to?
+
+What should we do to correlated features?
+
+
+
+
+
+However, on a good note, we can see some correlations between cancer incidents and features in the heatmap
+
+Good: Cancer Rate and Medicare (/Uninsured)
+Positive
+Makes sense
+Older population more cancer
+Not many young people get cancer compared to our elders
+
+
+
+
+
+we can look at some of these variables closer with a pairplot. 
+
+(Pair plot explaination)
+(high and low rates)
+(Why these variables)
+
 
 ![Pair Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Pair4.png)
 
-(Major depression and cancer incidents)(Explain Data Leakage)
+
+
+(Major depression and cancer incidents)
+(Explain Data Leakage)
 
 
 
@@ -114,37 +274,37 @@ We can see some nice correlations between cancer incidents and features as we lo
 
 ## Models
 
-(talk about scripts for each model)
-
 We will start with a normal linear regression gridsearched, as a baseline for the other models. The gridsearch found that setting the 3 parameters to fit_intercept=True, normalize=False, and copy_X=True will yeild the best RMSE score. Below is a histogram with cancer incident rates in the test data colored green and the model prediction for these same test values in blue.
 
 ![Lin Predicting](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Lin.png)
 
+## UNDER CONSTRUCTION
+
+(talk about scripts for each model)
+
+(Graph is from Lin.py script)
+
 (Explain RMSE and MAE in the graph)
 
-Not bad, but lets see how well boosting can perform with predicting these cancer rates. Next, up Random forest, gradient boosting, addaboost, and catboost with default parameters. Then we can compare the best model to XGBoost the current king of the boosting algorithms.
+Not bad, but lets see how well boosting can perform with predicting these cancer rates. 
+Next, up Random forest, gradient boosting, addaboost, and catboost with default parameters. 
+Then we can compare the best model to XGBoost the current king of the boosting algorithms.
+
 
 
 ### Overview of Models
 
-(NEW SECTION; explaining algorithms in detail)
+(In progress)
 
-#### Random Forest:
 
-#### Gradient Boosting:
+### Feature Importance and Default Scores
 
-#### Addaboost (Addaptive Boosting):
-
-#### CatBoost (Categorical Boosting):
-
-#### XGBoost (Extreme Gradient Boosting):
-
-### Feature Importance 
+## UNDER CONSTRUCTION
 
 Feature importance in these tree models refers to where splits of the tree happen. Splits are decided based on how well the model can best gain information. (reduce loss function and RMSE)
 
 The horizontal histograms below uses default parameters for each model. 
-calculated feature relevance and scores for RMSE and mean absolute error (MAE)
+calculated feature relevance and scores for RMSE and MAE
 
 
 ![Boosting Models Rel](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterBoosting.png)
@@ -153,7 +313,18 @@ calculated feature relevance and scores for RMSE and mean absolute error (MAE)
 
 
 
+
+
 ## Results
+
+## UNDER CONSTRUCTION
+
+(XGB vs GB vs Cat?)
+
+(Gridsearch explaination)
+
+(AWS Cat)(EC2(S3)
+
 
 gridsearch parameters Gradient Boosting
 parameters = {
@@ -169,9 +340,22 @@ parameters = {
      'n_estimators': [1600] #[600,900,1100,1200,1300,1400,1500,1600]
 }
 
+(Best GB parameters)
+
+(same as lin plot above)
+(actual test data and model predications)
+
+
+
+
 ![distribution predictions (Boosting)](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterPredicting.png)
 
 
+
+
+(recursive feature selection)
+(What does graph mean)
+RMSE change
 
 ![Feature importance](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterImportance.png)
 
@@ -179,7 +363,11 @@ parameters = {
 
 
 
+
+
 ## Discussion
+
+(Add to section)
 
 This project was supposed to look at specific chemicals from the Toxic Release Inventory data from the EPA and specific cancers, but the data was sparse and not all toxins released into our environment have to be reported. Adding socioeconomic data made the model more accurate and reliable. The rows with the smaller counties could have been dropped, then it would have be possible to add more features: BMI, blood pressure, smoking. Fracking wells and superfund sites information would have performed better, if the cancer data was mapped to an area smaller than the county level. There may be some data leakage with major depression, as cancer can lead to depression. CatBoost / XGBoost / LightGB could have been good alternatives to gradient boosting, but they take longer to gridsearch for optimal parameters and implement.
 
@@ -191,7 +379,14 @@ The Fracking Wells and Superfund Sites data that researchers scrapped from the w
 
 
 
+
+
+
+
+
 ## Conclusion 
+
+(Add to section)
 
 Boosting works with this regression problem. The final model has variance of +/- 5 RMSE. Medicare population and county FIPS are the features that matter the most in predicting cancer incidence rates for these models. More data is needed to determine relationships between diseases and the environment. 
 
@@ -206,6 +401,8 @@ Boosting works with this regression problem. The final model has variance of +/-
 2) Update graphs, add others (EDA)
 
 3) Clean all folders
+
+4) Add prequel and turn up fun
 
 4) Add links (Use refference links on page)
 
