@@ -322,7 +322,7 @@ calculated feature relevance and scores for RMSE and MAE
 
 
 gridsearch parameters Gradient Boosting
-parameters = {
+parameters =
 
      'max_depth':[3], #[2,3,4,5,6,7,8]
      
@@ -333,7 +333,7 @@ parameters = {
      'min_samples_split':[2], #[2,3,4,5]
      
      'n_estimators': [1600] #[600,900,1100,1200,1300,1400,1500,1600]
-}
+     
 
 (Best GB parameters)
 
