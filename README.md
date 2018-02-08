@@ -92,27 +92,27 @@ These next links will take you to on a trip to Jupyter Notebooks where we can ex
 
 (Links have eda and basic graphs, adding description for each kernel later)
 
-##### TRI
+#### TRI
 
 [Toxic Inventory Release (TRI)](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
-##### EPA Air Quality
+#### EPA Air Quality
 
 [Air Quality](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) 
 
-##### Radon
+#### Radon
 
 [Radon Averages](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
-##### Fracking Wells
+#### Fracking Wells
 
 [Fracking Wells](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
-##### Supefund Sites
+#### Supefund Sites
 
 [Superfund Sites](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
-##### SEER Cancer & Census
+#### SEER Cancer & Census
 
 [SEER + Census](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
@@ -276,7 +276,7 @@ We will start with a normal linear regression gridsearched, as a baseline for th
 
 ![Lin Predicting](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Lin.png)
 
-#### UNDER CONSTRUCTION
+#### (UNDER CONSTRUCTION)
 
 (talk about scripts for each model)
 
