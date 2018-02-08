@@ -86,35 +86,33 @@ For more information and a link to each file used in Cancer.csv, check out [Data
 
 ## EDA (Exploitory Data Analysis)
 
-### Meet Some of the Lucky Features
-
-###### UNDER CONSTRUCTION
+### (UNDER CONSTRUCTION) Meet Some of the Lucky Features
 
 These next links will take you to on a trip to Jupyter Notebooks where we can explore files before the merge.
 
 (Links have eda and basic graphs, adding description for each kernel later)
 
-#### TRI
+##### TRI
 
 [Toxic Inventory Release (TRI)](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
-#### EPA Air Quality
+##### EPA Air Quality
 
 [Air Quality](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) 
 
-#### Radon
+##### Radon
 
 [Radon Averages](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
-#### Fracking Wells
+##### Fracking Wells
 
 [Fracking Wells](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
-#### Supefund Sites
+##### Supefund Sites
 
 [Superfund Sites](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
-#### SEER Cancer & Census
+##### SEER Cancer & Census
 
 [SEER + Census](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
@@ -125,7 +123,7 @@ These next links will take you to on a trip to Jupyter Notebooks where we can ex
 
 
 
-### EDA in Final project 
+### (UNDER CONSTRUCTION) EDA in Final project 
 
 Now we will explore all the features that have successfully passed the merge to the final dataframe.
 
@@ -141,7 +139,7 @@ What correlates?
 
 
 
-#### Under Construction
+#### (UNDER CONSTRUCTION)
 
 Positve: 
 A county with high value in feature_1 likly has high value in feature_2, or low and low values, when feature_1 and feature_2 have positive correlation. This is represented as light color in graph above.
@@ -272,13 +270,13 @@ we can look at some of these variables closer with a pairplot.
 
 
 
-## Models
+## (UNDER CONSTRUCTION) Models
 
 We will start with a normal linear regression gridsearched, as a baseline for the other models. The gridsearch found that setting the 3 parameters to fit_intercept=True, normalize=False, and copy_X=True will yeild the best RMSE score. Below is a histogram with cancer incident rates in the test data colored green and the model prediction for these same test values in blue.
 
 ![Lin Predicting](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Lin.png)
 
-## UNDER CONSTRUCTION
+#### UNDER CONSTRUCTION
 
 (talk about scripts for each model)
 
@@ -297,9 +295,7 @@ Then we can compare the best model to XGBoost the current king of the boosting a
 (In progress)
 
 
-### Feature Importance and Default Scores
-
-## UNDER CONSTRUCTION
+### (UNDER CONSTRUCTION) Feature Importance and Default Scores
 
 Feature importance in these tree models refers to where splits of the tree happen. Splits are decided based on how well the model can best gain information. (reduce loss function and RMSE)
 
@@ -315,9 +311,8 @@ calculated feature relevance and scores for RMSE and MAE
 
 
 
-## Results
+## (UNDER CONSTRUCTION) Results
 
-## UNDER CONSTRUCTION
 
 (XGB vs GB vs Cat?)
 
