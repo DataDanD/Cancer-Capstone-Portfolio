@@ -83,30 +83,30 @@ For more information on each datasets used, including a link to each source, che
 
 ## EDA
 
-(Links here have graphs, going to add to them)
+(Links have eda and basic graphs, going to update)
 
 [Air Quality](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Fracking](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Superfunds](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [Radon](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters) / [TRI](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 [Cancer Rates and Graphs](https://github.com/DataDanD/Cancer-Capstone-Portfolio/tree/master/Jupyters)
 
-We can also see some of the features correlate, this is call multicolinearity and is not a good thing for machine learning algorithms. 
-
-Lighter and darker boxes on the heatmap are not a good thing, except for the diagalon going across the middle where features intersect with eachother. 
+We can also see some of the features correlate, this is call multicolinearity and is not a good thing for machine learning algorithms. Lighter and darker boxes on the heatmap are not a good thing, except for the diagalon going across the middle where features intersect with eachother. 
 
 (Explain why multicolinearity is bad)
+
 
 (Explain heatmap)
 
 ![Heatmap of All Features](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heatmap.png)
 
 
-
 We can see some nice correlations between cancer incidents and features as we look at a heatmap and we can look at some of these variables closer with a pairplot. 
 
-(Explain some similarity. Pair plot explaination. high and low rates explained)
+(Explain some similarites in heatmap)
+
+(Pair plot explaination)(high and low rates)(Why these variables)
 
 ![Pair Plot](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/Pair4.png)
 
-(Major depression and cancer incidents? Explain Data Leakage)
+(Major depression and cancer incidents)(Explain Data Leakage)
 
 
 
@@ -114,7 +114,7 @@ We can see some nice correlations between cancer incidents and features as we lo
 
 ## Models
 
-(talk about scripts)
+(talk about scripts for each model)
 
 We will start with a normal linear regression gridsearched, as a baseline for the other models. The gridsearch found that setting the 3 parameters to fit_intercept=True, normalize=False, and copy_X=True will yeild the best RMSE score. Below is a histogram with cancer incident rates in the test data colored green and the model prediction for these same test values in blue.
 
@@ -125,11 +125,26 @@ We will start with a normal linear regression gridsearched, as a baseline for th
 Not bad, but lets see how well boosting can perform with predicting these cancer rates. Next, up Random forest, gradient boosting, addaboost, and catboost with default parameters. Then we can compare the best model to XGBoost the current king of the boosting algorithms.
 
 
+### Overview of Models
+
+(NEW SECTION; explaining algorithms in detail)
+
+#### Random Forest:
+
+#### Gradient Boosting:
+
+#### Addaboost (Addaptive Boosting):
+
+#### CatBoost (Categorical Boosting):
+
+#### XGBoost (Extreme Gradient Boosting):
+
 ### Feature Importance 
 
 Feature importance in these tree models refers to where splits of the tree happen. Splits are decided based on how well the model can best gain information. (reduce loss function and RMSE)
 
-The horizontal histograms below useses default parameters to calculate feature relevance and RMSE and mean absolute error (MAE)
+The horizontal histograms below uses default parameters for each model. 
+calculated feature relevance and scores for RMSE and mean absolute error (MAE)
 
 
 ![Boosting Models Rel](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/PosterBoosting.png)
@@ -139,8 +154,6 @@ The horizontal histograms below useses default parameters to calculate feature r
 
 
 ## Results
-
-I picked gradient boosting because catboost takes way longer to gridsearch. (no, and talk AWS(EC2, S3)
 
 gridsearch parameters Gradient Boosting
 parameters = {
@@ -188,28 +201,19 @@ Boosting works with this regression problem. The final model has variance of +/-
 
 ### Future Steps
 
-Complete (EDA, Models, Results, Discussion, Conclusion)
-Update graphs, add others (EDA)
-Clean all folders
-Add links (Use refference links on page)
-EDA in Jupyter Notebooks explained
-Partial Dependency Plots to EDA section (script written) link script
-Bayesian Probabilistic Modeling with PyMC3 (link to Bayesian understanding)
+1) Complete (EDA, Models, Results, Discussion, Conclusion)
 
+2) Update graphs, add others (EDA)
 
-1)
+3) Clean all folders
 
-2) 
+4) Add links (Use refference links on page)
 
-3) 
+5) EDA in Jupyter Notebooks explained
 
-4) 
+6) Partial Dependency Plots to EDA section (script written) link script
 
-5) 
-
-6) 
-
-7) 
+7) Bayesian Probabilistic Modeling with PyMC3 (link to Bayesian understanding)
 
 
 
@@ -230,21 +234,3 @@ Bayesian Probabilistic Modeling with PyMC3 (link to Bayesian understanding)
 [5] http://www.who.int/mediacentre/news/releases/2006/pr32/en/ 
 
 [6] http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/ 
-
-
-
-
-
-### Overview of Models
-
-(New part to model section; explaining how algorithms work)
-
-#### Random Forest:
-
-#### Gradient Boosting:
-
-#### Addaboost (Addaptive Boosting):
-
-#### CatBoost (Categorical Boosting):
-
-#### XGBoost (Extreme Gradient Boosting):
