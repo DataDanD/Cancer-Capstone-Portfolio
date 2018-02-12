@@ -13,7 +13,6 @@
 * [Results](#results)
 * [Discussion](#discussion)
 * [Conclusion](#conclusion)
-* [Next Steps](#next steps)
 * [References](#references)
 
 
