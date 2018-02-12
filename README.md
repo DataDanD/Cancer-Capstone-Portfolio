@@ -3,6 +3,20 @@
 ###### AKA, 'Boosting Cancer Rates'
 
 
+## ***Content Table***
+
+* [Motivation](#motivation)
+* [Data](#data)
+* [Pipeline](#pipeline)
+* [EDA](#EDA)
+* [Models](#models)
+* [Results](#results)
+* [Discussion](#discussion)
+* [Conclusion](#conclusion)
+* [Next Steps](#next steps)
+* [References](#references)
+
+
 
 ## Motivation
 
@@ -52,7 +66,7 @@ For more information and a link to each file used in Cancer.csv, check out [Data
 
 
 
-### Discarded Data Section
+### Discarded Data
 
 (Sad section for me)
 
@@ -98,7 +112,7 @@ A good portion of this project was spent googling and surfing for sources, as fi
 
 
 
-## EDA (Exploitory Data Analysis)
+## EDA
 
 ### Meet (some of) the Lucky Features
 
@@ -217,7 +231,7 @@ Contains (in order):
 - Probability plots of data against quantiles of normal distribution
 
 
-### EDA of Final Data Frame
+### Merged Data EDA 
 
 Now we will explore all the features that have successfully passed the merge to the final dataframe.
 
@@ -564,7 +578,7 @@ With the average cancer incidents being about 540, being 60 people off isn't ter
 
 
 
-### Overview of Tree Type Regression Models
+### Overview of Boosted Regression Models
 
 Not bad, but lets see how well different types of decision tree algorithms can perform with predicting these cancer rates. 
 
@@ -717,7 +731,9 @@ parameters =
 
 
 
-## (UNDER CONSTRUCTION) Results
+## Results
+
+(UNDER CONSTRUCTION) 
 
 ### Final Model Selection
 
@@ -739,7 +755,9 @@ Compare to Linear baseline
 
 
 
-#### Recursive Feature Selection
+#### Feature Relevance
+
+Recursive Feature Selection
 
 Used to find feature importance.
 (What does graph mean)
@@ -754,7 +772,9 @@ RMSE change
 
 
 
-## (UNDER CONSTRUCTION) Discussion
+## Discussion
+
+(UNDER CONSTRUCTION) 
 
 This project was supposed to look at specific chemicals from the Toxic Release Inventory data from the EPA and specific cancers, but the data was sparse and not all toxins released into our environment have to be reported. Adding socioeconomic data made the model more accurate and reliable. The rows with the smaller counties could have been dropped, then it would have be possible to add more features: BMI, blood pressure, smoking. Fracking wells and superfund sites information would have performed better, if the cancer data was mapped to an area smaller than the county level. There may be some data leakage with major depression, as cancer can lead to depression. CatBoost / XGBoost / LightGB could have been good alternatives to gradient boosting, but they take longer to gridsearch for optimal parameters and implement.
 
@@ -771,7 +791,9 @@ The Fracking Wells and Superfund Sites data that researchers scrapped from the w
 
 
 
-## (UNDER CONSTRUCTION) Conclusion 
+## Conclusion 
+
+(UNDER CONSTRUCTION) 
 
 Boosting works with this regression problem. The final model has variance of +/- 5 RMSE. Medicare population and county FIPS are the features that matter the most in predicting cancer incidence rates for these models. More data is needed to determine relationships between diseases and the environment. 
 
@@ -780,7 +802,7 @@ Boosting works with this regression problem. The final model has variance of +/-
 
 
 
-### Future Steps
+### Next Steps
 
 1) Complete (EDA, Models, Results, Discussion, Conclusion)
    Table of contents
