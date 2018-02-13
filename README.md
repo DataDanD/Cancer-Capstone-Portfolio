@@ -8,20 +8,20 @@ Summary became large and parts were split into files now liked in report.
 
 [Repo Structure](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/RepoStructure.md)
      
-Shout outs:
+Shout Outs:
 - Margaret Kral, ZNA founder/CEO, and her noble mission to link environmental factors to unfortunate health conditions
 - Adam Richards, data science instructor and capstone scrum leader, sorry, no probabilistic programming in project.
 - David Henslovitz, data science peer, together we struggled and conquered our projects and data [his capstone](https://github.com/dhense177/Modeling_Lung_Cancer_Risk)
 - Laura Meurer, Mom, helping the clutter of terms, might now unfortunately know, and words towards proper English.
 
-Special thanks to**ZNA Health(http://www.znahealth.com/)**, 
+Special thanks to **ZNA Health(http://www.znahealth.com/)**, 
 and their [great team](http://www.znahealth.com/our-team/) 
 helping guide project from start to end.
 
 ## ***Content Table***
 
-* [Intoduction](#intoduction)
-* [Motivation](#motivation)
+* [Preface](#preface)
+* [Intro](#intro)
 * [Data](#data)
 * [Pipeline](#pipeline)
 * [EDA](#eda)
@@ -33,14 +33,16 @@ helping guide project from start to end.
 
 
 
-## Motivation
-### Overview
+## Intro
+### Project Selection
 This is a Galvanize capstone project investigating environmental factors and cancer rates in California counties from 2001 to 2012 using supervised learning techniques, specifically looking into types of gradient boosting. Boosting models are a go to base layer along with neural nets for most ensemble models in Kaggle competitions by Grand Masters. [6] This project will use different boosting models with different parameters to reduce root mean square error in test predictions. 2017 saw a new  boosting model hailing from Russian company Yandex called Catboost (Cat stands for Categorical); this model is supposed to compete well and even surpass XGBoost, the current all star.
 
-### Research
-Our environment plays a very important role in our life and thus our health. According to the WHO, as much as 24% of all disease is caused by environmental exposures that could have been averted. [5] New research keeps getting published about cancer and environmental pollution and some of this data is now being collected by government departments, especially in California. The Surveillance, Epidemiology, and End Results program (SEER) has about 10 million cases of cancer in their database ranging over 11 states, some starting in the 1970s. The last California counties to join this program (mandated by the state) happened in 2001 and since that year they have logged 2.5 million cancer incidents. This might seem like a lot for a state close to 40 million people, but the American Cancer Society states that 40% of American people will receive a diagnosis of cancer in their lifetime (½ of all men and ⅓ of all women). [4] Cancer rate is typically measured as incidents (new cases) per 100,000 and so will this project. This measure should not be confused with prevalence, total current cases. 
+### Relevant Research
+Our environment plays a very important role in our life and thus our health. According to the WHO, as much as 24% of all disease is caused by environmental exposures that could have been averted. [5] New research keeps getting published about cancer and environmental pollution and some of this data is now being collected by government departments, especially in California. The Surveillance, Epidemiology, and End Results program (SEER) has about 10 million cases of cancer in their database ranging over 11 states, some starting in the 1970s. The last California counties to join this program (mandated by the state) happened in 2001 and since that year they have logged 2.5 million cancer incidents. This might seem like a lot for a state close to 40 million people, but the American Cancer Society states that 40% of American people will receive a diagnosis of cancer in their lifetime (½ of all men and ⅓ of all women). [4] 
 
 ### **Figure 1.** Histogram of Target Variable
+Cancer rate is typically measured as incidents (new cases) per 100,000 and so will this project. This measure should not be confused with prevalence, total current cases. 
+
 The first goal was to find the average yearly California cancer incident rate by county. 
 The graph is a plot of the different incident values; 
 the average be 542 cases per 100,000, ranging from 200 to 1,000.
@@ -48,7 +50,7 @@ the average be 542 cases per 100,000, ranging from 200 to 1,000.
 ![Cancer Distribution Rate](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CancerIncidents.png)
 
 
-## Questions
+## Motivating Questions
 
 - Can a supervised learning algorithm predict cancer rates at a county level?
 
