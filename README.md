@@ -14,9 +14,9 @@ Shout outs:
 - David Henslovitz, data science peer, together we struggled and conquered our projects and data [his capstone](https://github.com/dhense177/Modeling_Lung_Cancer_Risk)
 - Laura Meurer, Mom, helping the clutter of terms, might now unfortunately know, and words towards proper English.
 
-Special thanks to healhcare startup, **ZNA Health(http://www.znahealth.com/)**, 
+Special thanks to**ZNA Health(http://www.znahealth.com/)**, 
 and their [great team](http://www.znahealth.com/our-team/) 
-that helped guide this project from start to end.
+that helped guide project from start to end.
 
 ## ***Content Table***
 
