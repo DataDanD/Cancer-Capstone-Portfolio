@@ -1,11 +1,9 @@
-# Statistical Methods in Machine Learning
+# Statistical Concepts in Machine Learning
 
-Concepts in this file were taking up too much space in README file.
-All sections have a link to them in projects home page.
+Statistical terms in this file were taking up too much space in README file, 
+which has link to to each section below.
 
 ## Correlation Overview
-
-![Heatmap of All Features](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heatmap.png)
 
 Correlation happens when a variable can be very accurately predicted 
 by using other data feature or features
@@ -20,11 +18,12 @@ Correlations are measured with a correlation coefficient
 that varies between -1 (a strong negative relations) and +1 (a strong positive correlation). 
 The relationship gets weaker as the value goes towards 0.
 
-Unfortunately we have lots of correlating features in heatmap above
-and this section is the longest.
+Unfortunately we have lots of correlating features in heatmap with all features.
+
+![Heatmap of All Features](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heatmap.png)
+
 A data scientist should believe that
 Garbage data into the model equals garbage predictions out.
-
 This "garbage" data is why analyzing data has one of the largest proportions of total time 
 in typical machine learning projects.
 Cleaning and possibly modeling
@@ -169,10 +168,10 @@ Combining columns together is called feature engineering and is discussed in nex
 
 
 
-###### Feature Engineering
+## Feature Engineering
 
 Feature engineering keeps correlated features by creating a new column that 
-somehow combines values of different columns
+somehow combines values of different columns.
 These definitely related social determinant columns would be appropriate to combine together.
 Especially if the columns are measured with similar unites.
 Using feature selection to drop some correlated features would be a quicker process, in reducing multicollinearity.
@@ -195,6 +194,8 @@ If engineered features correlate they will need to be combined or dropped and pr
 until no multicollinearity exists between features used for the machine learning models.
 
 (resource link)
+
+## References
 
 
 
