@@ -2,6 +2,12 @@
 
 ###### AKA, 'Boosting Cancer Rates'
 
+### Intoduction
+
+Special thanks to the ZNA Health() team that helped guide this project.
+
+Project write up became large and was split into many text files that areliked thoughout paper.
+
 
 ## ***Content Table***
 
