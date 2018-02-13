@@ -1,4 +1,4 @@
-# Project Features:
+# Features Exploration:
 
 ## Discarded Data
 (Sad section for me)
@@ -19,7 +19,7 @@ A good portion of this project was spent googling and surfing for sources, as fi
 
 ## Meet (some of) the Lucky Features
 
-Links will take you to on a trip to Jupyter Notebooks where we can explore one file at a time before the merge.
+Links in section will take you to on a trip to Jupyter Notebooks where we can explore one file at a time before the merge.
 
 
 ### SEER: Cancer + Census
@@ -139,7 +139,7 @@ Contains (in order):
 
 ![Heatmap of All Features](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/heatmap.png)
 
-### Top left of Heatmap
+### Top left
 Positive correlations between:
 Ozone, PM2.5, Population, and Count.
 
@@ -176,7 +176,7 @@ If air pollution is related to cancer then it is safe to say,
 'stay away from people' to reduce cancer risk. 
 
 
-### Middle of Graph
+### Middle
 
 Negative correlations, few positive:
 Education, Median Income, Poverty, Unemployment, Uninsured, Alcohal (spelled it wrong ><), Health Status, and Unhealthy Days.
@@ -204,7 +204,7 @@ Poverty and Median Income - increased poverty -> lower incomes
 Unemployment and Median Income - increased unemployment -> less income
 
 
-### Bottom Right Corner
+### Bottom Right
 
 Positive correlations between: 
 Elder Medicare, Disabled Medicare, Work Disabled, Drug Use, and Major Depression.
