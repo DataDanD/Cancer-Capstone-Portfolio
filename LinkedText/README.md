@@ -20,7 +20,7 @@ report was long and probably boring.
 
 ### **Model Education:**
 - Categores
-- architecture
+- Architecture
 - Packages
 - Scores
 
