@@ -10,9 +10,9 @@ Summary became large and parts were split into files now liked in report.
      
 Shout outs:
 - Margaret Kral, ZNA founder/CEO, and her noble mission to link environmental factors to unfortunate health conditions
+- Adam Richards, data science instructor and capstone scrum leader, sorry, no probabilistic programming in project.
+- David Henslovitz, data science peer, together we struggled and conquered our projects and data [his capstone](https://github.com/dhense177/Modeling_Lung_Cancer_Risk)
 - Laura Meurer, Mom, helping the clutter of terms, might now unfortunately know, and words towards proper English.
-- Adam Richards, instructor / capstone scrum leader, sorry, no probabilistic programming in project.
-- David Henslovitz, data science peer, together we struggled and conquered the project data [his capstone](https://github.com/dhense177/Modeling_Lung_Cancer_Risk)
 
 Special thanks to healhcare startup, **ZNA Health(http://www.znahealth.com/)**, 
 and their [great team](http://www.znahealth.com/our-team/) 
