@@ -16,7 +16,7 @@ Shout outs:
 
 Special thanks to**ZNA Health(http://www.znahealth.com/)**, 
 and their [great team](http://www.znahealth.com/our-team/) 
-that helped guide project from start to end.
+helping guide project from start to end.
 
 ## ***Content Table***
 
