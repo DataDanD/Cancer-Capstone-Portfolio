@@ -8,7 +8,7 @@
 * [Motivation](#motivation)
 * [Data](#data)
 * [Pipeline](#pipeline)
-* [EDA](#EDA)
+* [EDA](#eda)
 * [Models](#models)
 * [Results](#results)
 * [Discussion](#discussion)
