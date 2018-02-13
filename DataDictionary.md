@@ -1,3 +1,13 @@
+ToDo:
+- Sorting by name, website name, date downloaded, or project relevance
+Add 
+- Features from source used in model, or other parts of repo
+    - Other interesting features within file
+- Size of file when downloaded
+- Locations 
+- Formating type 
+
+
 ### Datasets and Source:
 1) SEER (Survailance Epidemiology and End Results program)
     - https://seer.cancer.gov/data/
