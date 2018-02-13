@@ -2,30 +2,21 @@
 
 ###### AKA, 'Boosting Cancer Rates'
 
-### Introduction
+### Preface
 
 Summary became large and parts were split into files now liked in report.
 
-**Folders:**
-- LinkedText: split sections available here for your viewing pleasure
-- PythonScripts: most of the codes written during experiment
-     - Scripts that were useful are hopefully linked to zone it helped
-- JupyterNotebook: explore data sets individually and finding useful features
-     - EDA on data from early files; connected sporadically in repository
-- ProjectGraphs: contains most visualizations from data analyzed for study
-     - Graphical programs: Python, Jupyter, and Tableau
+[Repo Structure](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/RepoStructure.md)
+     
+Shout outs:
+- Margaret Kral, ZNA founder/CEO, and her noble mission to link environmental factors to unfortunate health conditions
+- Laura Meurer, Mom, helping the clutter of terms, might now unfortunately know, and words towards proper English.
+- Adam Richards, instructor / capstone scrum leader, sorry, no probabilistic programming in project.
+- David Henslovitz, data science peer, together we struggled and conquered the project data [his capstone](https://github.com/dhense177/Modeling_Lung_Cancer_Risk)
 
 Special thanks to healhcare startup, **ZNA Health(http://www.znahealth.com/)**, 
 and their [great team](http://www.znahealth.com/our-team/) 
 that helped guide this project from start to end.
-     
-Shout outs:
-- Margaret Kral, ZNA founder/CEO, 
-and her noble mission to link environmental factors 
-to unfortunate health conditions
-- Laura Meurer, Mom, helping the clutter of terms, 
-might now unfortunately know, 
-and words towards proper English.
 
 ## ***Content Table***
 
