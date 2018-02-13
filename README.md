@@ -67,7 +67,7 @@ Most data sources were thanks to government agencies and their open source files
 
 Accessing the SEER cancer data requires a [signed wavier](https://seer.cancer.gov/data/access.html), therefore I am not allowed to share the file. However, Cancer.csv is the final file and can be downloaded from the home page on this repository. It has the cancer incident vales the models are trying to predict as well as all the final features used to make these predictions. Final data frame is 627 rows with 28 columns, 27 features for the X value in scripts and the y value that is predicted is labeled 'Cancer Rate'. There are 58 counties in California and 11 years of data, there should be 638 rows, but one county was missing Radon data and was dropped from this experiment.
 
-For more information and a link to each file used in Cancer.csv, check out [Data.md](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Data.md) on the home page.
+For more information and a **source link** to each file used in Cancer.csv, check out [Data.md](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/DataDictionary.md) on the home page.
 
 ###### **(LINK TO DISCARED DATA)**
 
