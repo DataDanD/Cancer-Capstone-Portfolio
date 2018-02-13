@@ -107,12 +107,12 @@ That is another thing to keep in mind.
 Which graph shows a positive and which shows a negative correlation to year?
 
 #### Cancer Incidents per Year
-[Cancer Incidents](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/SexCanCountsYr.png)
+![Cancer Incidents](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/SexCanCountsYr.png)
 
 Second graph in [SEER EDA](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Jupyters/CanRate%20EDA.ipynb) notebook
 
 #### Chemicals Released per Year
-[Chemicals](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/ChemByYr.png)
+![Chemicals](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Graphs/ChemByYr.png)
 
 fourth graph in [TRI](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/Jupyters/TRI%20EDA.ipynb) notebook
 
