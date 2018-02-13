@@ -2,15 +2,37 @@
 
 ###### AKA, 'Boosting Cancer Rates'
 
-### Intoduction
+### Introduction
 
-Special thanks to the ZNA Health() team that helped guide this project.
+Summary became large and was split up.
+Sections split are linked though report; 
+also available for your viewing pleasure in **LinkedText** folder.
 
-Project write up became large and was split into many text files that areliked thoughout paper.
+Three other folders above:
+- PythonScripts: most of the codes written during experiment
+     - Scripts that were useful are hopefully linked to zone it helped
+- JupyterNotebook: explore data sets individually and finding useful features
+     - EDA on data from early files; connected sporadically in repository
+- ProjectGraphs: contains most visualizations from data analyzed for study
+     - Graphical programs: Python, Jupyter, and Tableau
 
+Special thanks to healhcare startup, **ZNA Health(http://www.znahealth.com/)**, 
+and their [great team](http://www.znahealth.com/our-team/) 
+that helped guide this project from start to end.
+     
+Shout outs:
+- Margaret Kral, ZNA founder & CEO, 
+and her noble mission of connecting
+the links between environmental factors 
+and unfortunate health conditions 
+in our society. 
+- Laura Meurer (Mom), for helping move this clutter of terms, 
+she might now unfortunately know, 
+and other words closer to proper English grammar.
 
 ## ***Content Table***
 
+* [Intoduction](#intoduction)
 * [Motivation](#motivation)
 * [Data](#data)
 * [Pipeline](#pipeline)
