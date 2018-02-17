@@ -1,6 +1,6 @@
-#Vizualization of data during project
+# Vizualization of data during project
 
-##Folders:
+## Folders:
  - Poster: presented in class showcase (link) 
  - GitHub: used for text file in repository
  - Others: EDA (correlations, measurements), Models, Tableau - not on GitHub.
