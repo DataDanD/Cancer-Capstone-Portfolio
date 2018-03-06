@@ -2,26 +2,10 @@
 
 ###### AKA, 'Boosting Cancer Rates'
 
-### Preface
-
-Summary became large and parts were split into files now liked in report.
-
-[Repo Structure](https://github.com/DataDanD/Cancer-Capstone-Portfolio/blob/master/RepoStructure.md)
-     
-Shout Outs:
-- Margaret Kral, ZNA founder/CEO, and her noble mission to link environmental factors to unfortunate health conditions
-- Adam Richards, data science instructor and capstone scrum leader, sorry, no probabilistic programming in project.
-- David Henslovitz, data science peer, together we struggled and conquered our projects and data [his capstone](https://github.com/dhense177/Modeling_Lung_Cancer_Risk)
-- Laura Meurer, Mom, helping the clutter of terms, might now unfortunately know, and words towards proper English.
-
-Special thanks to **ZNA Health(http://www.znahealth.com/)**, 
-and their [great team](http://www.znahealth.com/our-team/) 
-helping guide project from start to end.
 
 ## ***Content Table***
 
-* [Preface](#preface)
-* [Intro](#intro)
+* [Introduction](#introduction)
 * [Data](#data)
 * [Pipeline](#pipeline)
 * [EDA](#eda)
@@ -33,7 +17,7 @@ helping guide project from start to end.
 
 
 
-## Intro
+## Introduction
 ### Project Selection
 This is a Galvanize capstone project investigating environmental factors and cancer rates in California counties from 2001 to 2012 using supervised learning techniques, specifically looking into types of gradient boosting. Boosting models are a go to base layer along with neural nets for most ensemble models in Kaggle competitions by Grand Masters. [6] This project will use different boosting models with different parameters to reduce root mean square error in test predictions. 2017 saw a new  boosting model hailing from Russian company Yandex called Catboost (Cat stands for Categorical); this model is supposed to compete well and even surpass XGBoost, the current all star.
 
@@ -291,7 +275,7 @@ RMSE change
 
 This project was supposed to look at specific chemicals from the Toxic Release Inventory data from the EPA and specific cancers, but the data was sparse and not all toxins released into our environment have to be reported. Adding socioeconomic data made the model more accurate and reliable. The rows with the smaller counties could have been dropped, then it would have be possible to add more features: BMI, blood pressure, smoking. Fracking wells and superfund sites information would have performed better, if the cancer data was mapped to an area smaller than the county level. There may be some data leakage with major depression, as cancer can lead to depression. CatBoost / XGBoost / LightGB could have been good alternatives to gradient boosting, but they take longer to gridsearch for optimal parameters and implement.
 
-### **Figure 9.** Scatter Plot 
+### **Figure 9.** Scatter Plot Top Correlation
 ![Cancer and Medicare](https://github.com/DataDanD/CancerCapstone/blob/master/Graphs/Updated/CanInMedPop.png)
 
 
